@@ -1,4 +1,3 @@
-
 body {
   font-family: 'Poppins', sans-serif;
   margin: 0;
@@ -16,14 +15,14 @@ h1, h2, h3 {
 }
 
 a {
-  color: #ff6f61;
+  color: #FF6347; /* Improved contrast */
   text-decoration: none;
   transition: color 0.3s ease, text-shadow 0.3s ease;
 }
 
 a:hover {
-  color: #ff3b2f;
-  text-shadow: 0 0 5px #ff3b2f, 0 0 10px #ff3b2f;
+  color: #FF4433; /* Improved contrast */
+  text-shadow: 0 0 5px #FF4433, 0 0 10px #FF4433;
 }
 
 /* Header Styles */
@@ -111,10 +110,7 @@ a:hover {
   background: #1a1a1a;
   border-radius: 8px;
   box-shadow: 0 4px 8px rgba(0, 0, 0, 0.3);
-  
 }
-
-
 
 .gaming-equipment h1 {
   text-align: center;
@@ -172,7 +168,7 @@ a:hover {
 .product-content .price {
   font-size: 20px;
   font-weight: bold;
-  color: #ff6f61;
+  color: #FF5252; /* Improved contrast */
   margin-top: 15px;
 }
 
@@ -203,7 +199,7 @@ footer a {
 }
 
 footer a:hover {
-  color: #ff3b2f;
+  color: #FF4433; /* Improved contrast */
   text-decoration: underline;
 }
 
@@ -293,15 +289,15 @@ footer a:hover {
     font-size: 13px;
   }
 }
- /* Add new styles */
- .action-buttons {
+
+.action-buttons {
   display: flex;
   gap: 15px;
   margin-top: 20px;
 }
 
 .cta-button {
-  background: #ff6f61;
+  background: #FF6347; /* Improved contrast */
   color: white;
   padding: 12px 25px;
   border: none;
@@ -312,17 +308,17 @@ footer a:hover {
 }
 
 .cta-button.favorite {
-  background: #00ffcc;
+  background: #00E5B8; /* Improved contrast */
   color: #121212;
 }
 
 .cta-button:hover {
   transform: scale(1.05);
-  box-shadow: 0 0 10px rgba(255, 111, 97, 0.5);
+  box-shadow: 0 0 10px rgba(255, 99, 71, 0.5); /* Updated color */
 }
 
 .cta-button.favorite:hover {
-  box-shadow: 0 0 10px rgba(0, 255, 204, 0.5);
+  box-shadow: 0 0 10px rgba(0, 229, 184, 0.5); /* Updated color */
 }
 
 .cart-section {
@@ -358,34 +354,37 @@ th {
   margin-top: 20px;
   justify-content: flex-end;
 }
-/* Add this CSS for remove button */
+
 .remove-btn {
-background: #ff3b2f !important;
-padding: 8px 15px !important;
-font-size: 14px !important;
+  background: #FF4433 !important; /* Improved contrast */
+  padding: 8px 15px !important;
+  font-size: 14px !important;
 }
 
 .remove-btn:hover {
-box-shadow: 0 0 10px rgba(255, 59, 47, 0.5) !important;
+  box-shadow: 0 0 10px rgba(255, 68, 51, 0.5) !important; /* Updated color */
 }
+
 .heart-icon {
-display: none;
-color: #ff3b2f;
-margin-left: 8px;
-font-size: 1.2em;
-transition: all 0.3s ease;
+  display: none;
+  color: #FF4433; /* Improved contrast */
+  margin-left: 8px;
+  font-size: 1.2em;
+  transition: all 0.3s ease;
 }
 
 .heart-icon.active {
-display: inline-block;
-animation: heartBeat 0.6s ease;
+  display: inline-block;
+  animation: heartBeat 0.6s ease;
 }
 
 @keyframes heartBeat {
-0% { transform: scale(1); }
-50% { transform: scale(1.3); }
-100% { transform: scale(1); }
+  0% { transform: scale(1); }
+  50% { transform: scale(1.3); }
+  100% { transform: scale(1); }
 }
+
+
 
 
 
