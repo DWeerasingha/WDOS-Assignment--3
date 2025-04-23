@@ -1,8 +1,9 @@
+/* ==== Global Colors ==== */
 body {
   font-family: 'Poppins', sans-serif;
   margin: 0;
   padding: 0;
-  color: #e0e0e0;
+  color: #ffffff;                    /* changed from #e0e0e0 */
   background-color: #121212;
   line-height: 1.6;
   scroll-behavior: smooth;
@@ -14,22 +15,23 @@ h1, h2, h3 {
   text-shadow: 0 0 5px #00ffcc, 0 0 10px #00ffcc;
 }
 
+/* ==== Links ==== */
 a {
-  color: #FF6347; /* Improved contrast */
+  color: #FFB74D;                    /* new high-contrast orange */
   text-decoration: none;
   transition: color 0.3s ease, text-shadow 0.3s ease;
 }
 
 a:hover {
-  color: #FF4433; /* Improved contrast */
-  text-shadow: 0 0 5px #FF4433, 0 0 10px #FF4433;
+  color: #FFA726;                    /* slightly brighter on hover */
+  text-shadow: 0 0 5px #FFA726, 0 0 10px #FFA726;
 }
 
-/* Header Styles */
+/* ==== Header ==== */
 .header {
   background: linear-gradient(135deg, #1a1a1a, #333);
   padding: 20px;
-  color: white;
+  color: #ffffff;                    /* ensure header text is pure white */
   box-shadow: 0 4px 8px rgba(0, 0, 0, 0.3);
   text-align: center;
   position: relative;
@@ -38,9 +40,9 @@ a:hover {
 .header .title {
   font-size: 36px;
   font-weight: bold;
+  color: #00ffcc;
   text-shadow: 0 0 5px #00ffcc, 0 0 10px #00ffcc;
   margin-bottom: 10px;
-  color: #00ffcc;
 }
 
 .header .links {
@@ -51,12 +53,16 @@ a:hover {
 }
 
 .header .links a {
-  color: #e0e0e0;
+  color: #ffffff;                    /* changed from #e0e0e0 */
   font-size: 18px;
-  transition: all 0.3s ease;
+  transition: color 0.3s ease;
 }
 
-/* Hamburger Menu */
+.header .links a:hover {
+  color: #FFA726;
+}
+
+/* ==== Mobile Hamburger ==== */
 .hamburger {
   display: none;
   cursor: pointer;
@@ -96,13 +102,13 @@ a:hover {
 .mobile-menu a {
   display: block;
   padding: 12px;
-  color: #e0e0e0;
+  color: #ffffff;                    /* ensure mobile links are white */
   text-align: center;
   border-bottom: 1px solid #333;
   font-size: 16px;
 }
 
-/* Gaming Equipment Section */
+/* ==== Products Section ==== */
 .gaming-equipment {
   padding: 40px 20px;
   max-width: 1200px;
@@ -147,10 +153,11 @@ a:hover {
   font-size: 24px;
 }
 
-.product-content p {
+.product-content p,
+.product-content ul li {
   font-size: 16px;
   line-height: 1.8;
-  color: #e0e0e0;
+  color: #ffffff;                   /* ensure all body text is pure white */
   margin-top: 10px;
 }
 
@@ -159,137 +166,14 @@ a:hover {
   padding: 0;
 }
 
-.product-content ul li {
-  margin: 10px 0;
-  font-size: 16px;
-  color: #e0e0e0;
-}
-
 .product-content .price {
   font-size: 20px;
   font-weight: bold;
-  color: #FF5252; /* Improved contrast */
+  color: #FF5252;                   /* contrast-checked red on dark bg */
   margin-top: 15px;
 }
 
-/* Footer Styles */
-footer {
-  background: linear-gradient(135deg, #1a1a1a, #333);
-  color: #e0e0e0;
-  padding: 20px 40px;
-  display: flex;
-  flex-wrap: wrap;
-  justify-content: center;
-  align-items: center;
-  font-size: 14px;
-  box-shadow: 0 -4px 8px rgba(0, 0, 0, 0.3);
-}
-
-footer div {
-  text-align: center;
-  margin: 5px 10px;
-}
-
-footer a {
-  color: #e0e0e0;
-  text-decoration: none;
-  margin: 5px 10px;
-  font-size: 14px;
-  transition: color 0.3s ease;
-}
-
-footer a:hover {
-  color: #FF4433; /* Improved contrast */
-  text-decoration: underline;
-}
-
-/* Responsive Design */
-@media (max-width: 768px) {
-  .hamburger {
-    display: block;
-  }
-
-  .header .links {
-    display: none;
-  }
-
-  .header .title {
-    font-size: 28px;
-    margin-right: 50px;
-  }
-
-  .mobile-menu a {
-    font-size: 16px;
-    padding: 15px;
-  }
-
-  .product {
-    flex-direction: column;
-    align-items: center;
-  }
-
-  .product img {
-    width: 100%;
-    height: auto;
-    margin-right: 0;
-    margin-bottom: 20px;
-  }
-
-  .product-content {
-    text-align: center;
-  }
-
-  footer {
-    padding: 20px 15px;
-    flex-direction: column;
-    text-align: center;
-  }
-
-  footer div {
-    margin: 10px 0;
-  }
-}
-
-@media (max-width: 480px) {
-  .header .title {
-    font-size: 24px;
-  }
-
-  .hamburger {
-    right: 15px;
-    top: 20px;
-  }
-
-  .hamburger span {
-    width: 25px;
-  }
-
-  .gaming-equipment h1 {
-    font-size: 24px;
-  }
-
-  .product-content h2 {
-    font-size: 20px;
-  }
-
-  .product-content p {
-    font-size: 14px;
-    line-height: 1.5;
-  }
-
-  .product-content ul li {
-    font-size: 14px;
-  }
-
-  .product-content .price {
-    font-size: 16px;
-  }
-
-  footer {
-    font-size: 13px;
-  }
-}
-
+/* ==== Call-to-Action Buttons ==== */
 .action-buttons {
   display: flex;
   gap: 15px;
@@ -297,30 +181,31 @@ footer a:hover {
 }
 
 .cta-button {
-  background: #FF6347; /* Improved contrast */
-  color: white;
+  background: #C62828;              /* darker red for white text contrast */
+  color: #ffffff;                   /* ensure 4.5:1+ ratio */
   padding: 12px 25px;
   border: none;
   border-radius: 5px;
   cursor: pointer;
-  transition: all 0.3s ease;
   font-family: 'Orbitron', sans-serif;
-}
-
-.cta-button.favorite {
-  background: #00E5B8; /* Improved contrast */
-  color: #121212;
+  transition: all 0.3s ease;
 }
 
 .cta-button:hover {
   transform: scale(1.05);
-  box-shadow: 0 0 10px rgba(255, 99, 71, 0.5); /* Updated color */
+  box-shadow: 0 0 10px rgba(198, 40, 40, 0.5);
+}
+
+.cta-button.favorite {
+  background: #00E5B8;              /* keeps your turquoise favorite button */
+  color: #121212;                   /* dark text on bright bg is accessible here */
 }
 
 .cta-button.favorite:hover {
-  box-shadow: 0 0 10px rgba(0, 229, 184, 0.5); /* Updated color */
+  box-shadow: 0 0 10px rgba(0, 229, 184, 0.5);
 }
 
+/* ==== Cart Section ==== */
 .cart-section {
   max-width: 1200px;
   margin: 40px auto;
@@ -339,7 +224,7 @@ th, td {
   padding: 15px;
   text-align: left;
   border-bottom: 1px solid #333;
-  color: #e0e0e0;
+  color: #ffffff;                   /* ensure table text is white */
 }
 
 th {
@@ -356,18 +241,19 @@ th {
 }
 
 .remove-btn {
-  background: #FF4433 !important; /* Improved contrast */
+  background: #B71C1C;              /* dark red to contrast white text */
+  color: #ffffff;
   padding: 8px 15px !important;
   font-size: 14px !important;
 }
 
 .remove-btn:hover {
-  box-shadow: 0 0 10px rgba(255, 68, 51, 0.5) !important; /* Updated color */
+  box-shadow: 0 0 10px rgba(183, 28, 28, 0.5) !important;
 }
 
 .heart-icon {
   display: none;
-  color: #FF4433; /* Improved contrast */
+  color: #FF4433;
   margin-left: 8px;
   font-size: 1.2em;
   transition: all 0.3s ease;
@@ -384,8 +270,61 @@ th {
   100% { transform: scale(1); }
 }
 
+/* ==== Footer ==== */
+footer {
+  background: linear-gradient(135deg, #1a1a1a, #333);
+  color: #ffffff;                   /* pure white for all footer text */
+  padding: 20px 40px;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  align-items: center;
+  font-size: 14px;
+  box-shadow: 0 -4px 8px rgba(0, 0, 0, 0.3);
+}
 
+footer div {
+  text-align: center;
+  margin: 5px 10px;
+  color: #ffffff;
+}
 
+footer a {
+  color: #ffffff;                   /* ensure links are white */
+  text-decoration: none;
+  margin: 5px 10px;
+  font-size: 14px;
+  transition: color 0.3s ease;
+}
+
+footer a:hover {
+  color: #FFA726;
+  text-decoration: underline;
+}
+
+/* ==== Responsive Adjustments ==== */
+@media (max-width: 768px) {
+  .hamburger { display: block; }
+  .header .links { display: none; }
+  .header .title { font-size: 28px; margin-right: 50px; }
+  .mobile-menu a { font-size: 16px; padding: 15px; }
+  .product { flex-direction: column; align-items: center; }
+  .product img { width: 100%; height: auto; margin-right: 0; margin-bottom: 20px; }
+  .product-content { text-align: center; }
+  footer { padding: 20px 15px; flex-direction: column; text-align: center; }
+  footer div { margin: 10px 0; }
+}
+
+@media (max-width: 480px) {
+  .header .title { font-size: 24px; }
+  .hamburger { right: 15px; top: 20px; }
+  .hamburger span { width: 25px; }
+  .gaming-equipment h1 { font-size: 24px; }
+  .product-content h2 { font-size: 20px; }
+  .product-content p, .product-content ul li { font-size: 14px; line-height: 1.5; }
+  .product-content .price { font-size: 16px; }
+  footer { font-size: 13px; }
+}
 
 
 
